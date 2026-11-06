@@ -1,238 +1,547 @@
-
+HTML
 <!DOCTYPE html>
 <html lang="mr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>मागील विजेते | विचारक्रांती युवा वक्ता २०२७</title>
 
-    <meta name="description" content="विचारक्रांती युवा वक्ता स्पर्धेतील मागील विजेत्यांची माहिती">
+    <meta name="description" content="विचारक्रांती युवा वक्ता स्पर्धेतील २०१८ ते २०२६ या वर्षांतील प्रथम क्रमांक विजेते.">
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
 
-    <!-- LOADER -->
-    <div class="loader" id="loader">
-        <div class="loader-circle"></div>
-        <p>विचारक्रांती</p>
-    </div>
+<!-- HEADER -->
+<header class="header">
+    <div class="container header-inner">
 
-    <!-- OVERLAY -->
-    <div class="overlay" id="overlay"></div>
+        <a href="index.html" class="logo-area">
+            <img src="logo.jpg" alt="विचारक्रांती लोगो">
 
-    <!-- HEADER -->
-    <header class="header" id="header">
-
-        <div class="logo-area">
-            <img src="logo.png" alt="Logo">
-            <div>
-                <h2>विचारक्रांती</h2>
-                <p>राज्यस्तरीय युवा वक्ता २०२७</p>
+            <div class="logo-text">
+                <h2>विचारक्रांती युवा वक्ता</h2>
+                <p>राज्यस्तरीय वक्तृत्व स्पर्धा २०२७</p>
             </div>
-        </div>
+        </a>
 
-        <button class="menu-btn" id="menuBtn">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="menu-btn" id="menuBtn" aria-label="मेन्यू उघडा">
+            <i data-lucide="menu"></i>
         </button>
 
-    </header>
+    </div>
+</header>
 
-    <!-- SIDEBAR -->
-    <nav class="sidebar" id="sidebar">
 
-        <button class="close-btn" id="closeBtn">×</button>
+<!-- SIDEBAR -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-        <div class="sidebar-logo">
-            <img src="logo.png" alt="Logo">
-            <h2>विचारक्रांती</h2>
-            <p>युवा वक्ता २०२७</p>
-        </div>
+<aside class="sidebar" id="sidebar">
 
-        <div class="menu-links">
-            <a href="index.html">⌂ मुख्यपृष्ठ</a>
-            <a href="competition.html">◈ स्पर्धेविषयी</a>
-            <a href="prizes.html">🏆 पारितोषिके</a>
-            <a href="rules.html">📋 नियमावली</a>
-            <a href="winners.html" class="active">🥇 मागील विजेते</a>
-            <a href="registration.html">📝 ऑनलाइन नोंदणी</a>
-            <a href="contact.html">☎ संपर्क</a>
-        </div>
+    <div class="sidebar-header">
+
+        <img src="logo.jpg" alt="विचारक्रांती लोगो">
+
+        <h3>विचारक्रांती युवा वक्ता</h3>
+        <p>राज्यस्तरीय वक्तृत्व स्पर्धा २०२७</p>
+
+        <button class="sidebar-close" id="closeSidebar" aria-label="मेन्यू बंद करा">
+            <i data-lucide="x"></i>
+        </button>
+
+    </div>
+
+    <nav class="sidebar-nav">
+
+        <a href="index.html">
+            <i data-lucide="house"></i>
+            <span>मुख्यपृष्ठ</span>
+        </a>
+
+        <a href="competition.html">
+            <i data-lucide="mic-vocal"></i>
+            <span>स्पर्धेविषयी</span>
+        </a>
+
+        <a href="rules.html">
+            <i data-lucide="scroll-text"></i>
+            <span>नियम व अटी</span>
+        </a>
+
+        <a href="prizes.html">
+            <i data-lucide="trophy"></i>
+            <span>पारितोषिके</span>
+        </a>
+
+        <a href="winners.html" class="active">
+            <i data-lucide="medal"></i>
+            <span>मागील विजेते</span>
+        </a>
+
+        <a href="registration.html">
+            <i data-lucide="clipboard-pen-line"></i>
+            <span>नोंदणी</span>
+        </a>
+
+        <a href="about.html">
+            <i data-lucide="users"></i>
+            <span>आमच्याविषयी</span>
+        </a>
+
+        <a href="contact.html">
+            <i data-lucide="phone"></i>
+            <span>संपर्क</span>
+        </a>
 
     </nav>
 
-    <!-- PAGE HERO -->
-    <section class="page-hero">
+</aside>
 
-        <div class="page-hero-content reveal">
 
-            <span class="hero-badge">Hall of Fame</span>
+<main>
 
-            <h1>
-                आमचे मानकरी<br>
-                <span>मागील विजेते</span>
-            </h1>
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+
+        <div class="container">
+
+            <span class="subtitle">गौरवशाली परंपरा</span>
+
+            <h1>मागील विजेते</h1>
 
             <p>
-                विचारक्रांतीच्या व्यासपीठावर चमकलेल्या वक्तृत्व प्रतिभांचा सन्मान.
+                विचारक्रांती युवा वक्ता स्पर्धेच्या
+                नऊ वर्षांतील प्रथम क्रमांक विजेत्यांचा गौरव.
             </p>
+
+            <div class="gold-line"></div>
 
         </div>
 
     </section>
 
-    <!-- WINNERS INTRO -->
-    <section class="content-page">
 
-        <div class="section-heading reveal">
-            <span class="section-tag">Our Champions</span>
-            <h2>विजेत्यांचा गौरव</h2>
-            <p>
-                मागील स्पर्धांमध्ये उत्कृष्ट कामगिरी करणाऱ्या
-                सर्व विजेत्यांचे हार्दिक अभिनंदन!
-            </p>
-        </div>
+    <!-- BREADCRUMB -->
+    <div class="container breadcrumb">
 
-    </section>
+        <a href="index.html">मुख्यपृष्ठ</a>
+        <span> / </span>
+        <span>मागील विजेते</span>
 
-    <!-- YEAR 2026 -->
-    <section class="content-page">
+    </div>
 
-        <div class="section-heading reveal">
-            <span class="section-tag">Previous Edition</span>
-            <h2>मागील वर्षाचे विजेते</h2>
-        </div>
 
-        <div class="winner-grid">
+    <!-- WINNERS SECTION -->
+    <section class="section section-light">
 
-            <div class="winner-card reveal">
+        <div class="container">
 
-                <div class="winner-photo">
-                    <span>🥇</span>
-                </div>
+            <div class="section-heading">
 
-                <div class="winner-info">
-                    <span class="winner-position">प्रथम क्रमांक</span>
-                    <h3>विजेत्याचे नाव</h3>
-                    <p>मागील स्पर्धा</p>
-                </div>
+                <span class="subtitle">२०१८ ते २०२६</span>
+
+                <h2>नऊ वर्षांचा गौरवशाली इतिहास</h2>
+
+                <div class="gold-line"></div>
+
+                <p>
+                    विचारक्रांती युवा वक्ता स्पर्धेतील
+                    मागील वर्षांच्या प्रथम क्रमांक विजेत्यांची माहिती.
+                </p>
 
             </div>
 
-            <div class="winner-card reveal">
 
-                <div class="winner-photo">
-                    <span>🥈</span>
+            <div class="winners-grid">
+
+
+                <!-- 2026 -->
+                <div class="winner-card">
+
+                    <div class="winner-image">
+                        <img src="2026.jpg"
+                             alt="२०२६ विजेती वेदिका शिऊरकर"
+                             loading="lazy">
+                    </div>
+
+                    <div class="winner-info">
+
+                        <span class="winner-year">२०२६</span>
+
+                        <h3>वेदिका शिऊरकर</h3>
+
+                        <p>
+                            <i data-lucide="map-pin"></i>
+                            छत्रपती संभाजीनगर
+                        </p>
+
+                        <span class="winner-position">
+                            प्रथम क्रमांक विजेती
+                        </span>
+
+                    </div>
+
                 </div>
 
-                <div class="winner-info">
-                    <span class="winner-position">द्वितीय क्रमांक</span>
-                    <h3>विजेत्याचे नाव</h3>
-                    <p>मागील स्पर्धा</p>
+
+                <!-- 2025 -->
+                <div class="winner-card">
+
+                    <div class="winner-image">
+                        <img src="2025.jpg"
+                             alt="२०२५ विजेता अनिश बेल्लरकर"
+                             loading="lazy">
+                    </div>
+
+                    <div class="winner-info">
+
+                        <span class="winner-year">२०२५</span>
+
+                        <h3>अनिश बेल्लरकर</h3>
+
+                        <p>
+                            <i data-lucide="map-pin"></i>
+                            परभणी
+                        </p>
+
+                        <span class="winner-position">
+                            प्रथम क्रमांक विजेता
+                        </span>
+
+                    </div>
+
                 </div>
+
+
+                <!-- 2024 -->
+                <div class="winner-card">
+
+                    <div class="winner-image">
+                        <img src="2024.jpg"
+                             alt="२०२४ विजेता यश पाटील"
+                             loading="lazy">
+                    </div>
+
+                    <div class="winner-info">
+
+                        <span class="winner-year">२०२४</span>
+
+                        <h3>यश पाटील</h3>
+
+                        <p>
+                            <i data-lucide="map-pin"></i>
+                            कल्याण
+                        </p>
+
+                        <span class="winner-position">
+                            प्रथम क्रमांक विजेता
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 2023 -->
+                <div class="winner-card">
+
+                    <div class="winner-image">
+                        <img src="2023.jpg"
+                             alt="२०२३ विजेता संकेत पाटील"
+                             loading="lazy">
+                    </div>
+
+                    <div class="winner-info">
+
+                        <span class="winner-year">२०२३</span>
+
+                        <h3>संकेत पाटील</h3>
+
+                        <p>
+                            <i data-lucide="map-pin"></i>
+                            कोल्हापूर
+                        </p>
+
+                        <span class="winner-position">
+                            प्रथम क्रमांक विजेता
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 2022 -->
+                <div class="winner-card">
+
+                    <div class="winner-image">
+                        <img src="2022.jpg"
+                             alt="२०२२ विजेता सुजित काळंगे"
+                             loading="lazy">
+                    </div>
+
+                    <div class="winner-info">
+
+                        <span class="winner-year">२०२२</span>
+
+                        <h3>सुजित काळंगे</h3>
+
+                        <p>
+                            <i data-lucide="map-pin"></i>
+                            सातारा
+                        </p>
+
+                        <span class="winner-position">
+                            प्रथम क्रमांक विजेता
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 2021 -->
+                <div class="winner-card">
+
+                    <div class="winner-image">
+                        <img src="2021.jpg"
+                             alt="२०२१ विजेती अश्विनी टाव्हरे"
+                             loading="lazy">
+                    </div>
+
+                    <div class="winner-info">
+
+                        <span class="winner-year">२०२१</span>
+
+                        <h3>अश्विनी टाव्हरे</h3>
+
+                        <p>
+                            <i data-lucide="map-pin"></i>
+                            पुणे
+                        </p>
+
+                        <span class="winner-position">
+                            प्रथम क्रमांक विजेती
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 2020 -->
+                <div class="winner-card">
+
+                    <div class="winner-image">
+                        <img src="2020.jpg"
+                             alt="२०२० विजेती मुग्धा थोरात"
+                             loading="lazy">
+                    </div>
+
+                    <div class="winner-info">
+
+                        <span class="winner-year">२०२०</span>
+
+                        <h3>मुग्धा थोरात</h3>
+
+                        <p>
+                            <i data-lucide="map-pin"></i>
+                            नाशिक
+                        </p>
+
+                        <span class="winner-position">
+                            प्रथम क्रमांक विजेती
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 2019 -->
+                <div class="winner-card">
+
+                    <div class="winner-image">
+                        <img src="2019.jpg"
+                             alt="२०१९ विजेती रुपाली पळसे"
+                             loading="lazy">
+                    </div>
+
+                    <div class="winner-info">
+
+                        <span class="winner-year">२०१९</span>
+
+                        <h3>रुपाली पळसे</h3>
+
+                        <p>
+                            <i data-lucide="map-pin"></i>
+                            पिंपळगाव बसवंत
+                        </p>
+
+                        <span class="winner-position">
+                            प्रथम क्रमांक विजेती
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 2018 -->
+                <div class="winner-card">
+
+                    <div class="winner-image">
+                        <img src="2018.jpg"
+                             alt="२०१८ विजेता प्रवीण शिंदे"
+                             loading="lazy">
+                    </div>
+
+                    <div class="winner-info">
+
+                        <span class="winner-year">२०१८</span>
+
+                        <h3>प्रवीण शिंदे</h3>
+
+                        <p>
+                            <i data-lucide="map-pin"></i>
+                            पुणे
+                        </p>
+
+                        <span class="winner-position">
+                            प्रथम क्रमांक विजेता
+                        </span>
+
+                    </div>
+
+                </div>
+
 
             </div>
 
-            <div class="winner-card reveal">
+        </div>
 
-                <div class="winner-photo">
-                    <span>🥉</span>
+    </section>
+
+
+    <!-- 2027 SECTION -->
+    <section class="section section-cream">
+
+        <div class="container">
+
+            <div class="registration-box">
+
+                <div class="card-icon" style="margin: 0 auto 20px;">
+                    <i data-lucide="award"></i>
                 </div>
 
-                <div class="winner-info">
-                    <span class="winner-position">तृतीय क्रमांक</span>
-                    <h3>विजेत्याचे नाव</h3>
-                    <p>मागील स्पर्धा</p>
-                </div>
+                <h2>२०२७ चा मानकरी कोण होणार?</h2>
+
+                <p>
+                    विचारक्रांती युवा वक्ता स्पर्धेच्या
+                    दहाव्या वर्षात आपल्या नावाची नोंद
+                    इतिहासात करण्याची संधी!
+                </p>
+
+                <a href="https://forms.gle/ybr4o64BgDx9uYzj6"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-gold">
+
+                    सहभागी व्हा
+                    <i data-lucide="arrow-up-right"></i>
+
+                </a>
 
             </div>
 
         </div>
 
-        <div class="winner-note reveal">
-            <span>📸</span>
-            <p>
-                विजेत्यांचे फोटो आणि नावे आयोजकांकडून मिळाल्यानंतर
-                येथे अपडेट करता येतील.
-            </p>
-        </div>
-
     </section>
 
-    <!-- MEMORIES -->
-    <section class="event-highlight">
+</main>
 
-        <div class="highlight-content reveal">
 
-            <span class="section-tag">Memories & Achievements</span>
+<!-- FOOTER -->
+<footer class="footer">
 
-            <h2>प्रत्येक विजयामागे एक प्रेरणादायी प्रवास!</h2>
+    <div class="container">
 
-            <p>
-                विचारक्रांतीच्या व्यासपीठावरून घडलेल्या
-                वक्तृत्व प्रवासाचा आम्हाला अभिमान आहे.
-            </p>
+        <div class="footer-grid">
 
-        </div>
+            <div class="footer-about">
 
-    </section>
+                <img src="logo.jpg" alt="विचारक्रांती लोगो">
 
-    <!-- CTA -->
-    <section class="cta-section">
+                <h3>विचारक्रांती युवा वक्ता २०२७</h3>
 
-        <div class="cta-box reveal">
+                <p>
+                    राज्यस्तरीय वक्तृत्व स्पर्धा
+                    <br>
+                    जाखोरी, ता. जि. नाशिक
+                    <br>
+                    टीम विचारक्रांती, जाखोरी
+                </p>
 
-            <h2>यंदा तुमचे नाव या यादीत असू शकते!</h2>
+            </div>
 
-            <p>
-                विचारक्रांती युवा वक्ता २०२७ मध्ये सहभागी व्हा.
-            </p>
-
-            <a href="registration.html" class="btn btn-white">
-                नोंदणी करा →
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <div class="footer-content">
-
-            <img src="logo.png" alt="Logo">
-
-            <h2>विचारक्रांती</h2>
-
-            <p>राज्यस्तरीय युवा वक्ता २०२७</p>
-
-            <p class="footer-location">
-                📍 जाखोरी, ता. जि. नाशिक
-            </p>
 
             <div class="footer-links">
+
+                <h3>महत्त्वाच्या लिंक</h3>
+
                 <a href="index.html">मुख्यपृष्ठ</a>
                 <a href="competition.html">स्पर्धेविषयी</a>
+                <a href="rules.html">नियम व अटी</a>
                 <a href="prizes.html">पारितोषिके</a>
-                <a href="contact.html">संपर्क</a>
+
             </div>
 
-            <div class="footer-bottom">
-                © २०२७ विचारक्रांती | टीम विचारक्रांती, जाखोरी
+
+            <div class="footer-links">
+
+                <h3>इतर माहिती</h3>
+
+                <a href="winners.html">मागील विजेते</a>
+                <a href="registration.html">नोंदणी</a>
+                <a href="about.html">आमच्याविषयी</a>
+                <a href="contact.html">संपर्क</a>
+
             </div>
 
         </div>
 
-    </footer>
+    </div>
 
-    <button class="back-to-top" id="backToTop">↑</button>
+
+    <div class="footer-bottom">
+
+        <p>
+            © २०२७ विचारक्रांती युवा वक्ता. सर्व हक्क राखीव.
+        </p>
+
+        <p>टीम विचारक्रांती, जाखोरी</p>
+
+    </div>
+
+</footer>
+
+
+<!-- BACK TO TOP -->
+<button id="backToTop" class="back-to-top" aria-label="वर जा">
+    <i data-lucide="arrow-up"></i>
+</button>
+
+
+<script src="script.js"></script>
+
+<script>
+    if (window.lucide) {
+        lucide.createIcons();
+    }
+</script>
 
 </body>
 </html>

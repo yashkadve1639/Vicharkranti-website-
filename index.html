@@ -6,278 +6,850 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>विचारक्रांती | युवा वक्ता २०२७</title>
+    <title>विचारक्रांती युवा वक्ता २०२७ | अधिकृत वेबसाइट</title>
 
-    <meta name="description" content="विचारक्रांती राज्यस्तरीय युवा वक्ता २०२७ - दहावे वर्ष">
+    <meta name="description" content="विचारक्रांती युवा वक्ता २०२७ ही राज्यस्तरीय वक्तृत्व स्पर्धा. जाखोरी, नाशिक. स्पर्धेची माहिती, पारितोषिके, विजेते आणि नोंदणी.">
 
+    <meta name="theme-color" content="#990000">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+
 </head>
 
 <body>
 
-    <!-- LOADER -->
-    <div class="loader" id="loader">
-        <div class="loader-circle"></div>
-        <p>विचारक्रांती</p>
-    </div>
+<!-- ======================================
+     HEADER
+====================================== -->
 
-    <!-- OVERLAY -->
-    <div class="overlay" id="overlay"></div>
+<header class="header">
 
-    <!-- HEADER -->
-    <header class="header" id="header">
+    <div class="container header-inner">
 
-        <div class="logo-area">
-            <img src="logo.png" alt="विचारक्रांती Logo">
-            <div>
-                <h2>विचारक्रांती</h2>
-                <p>राज्यस्तरीय युवा वक्ता २०२७</p>
+        <a href="index.html" class="logo-area">
+
+            <img src="logo.jpg" alt="विचारक्रांती लोगो">
+
+            <div class="logo-text">
+
+                <h2>विचारक्रांती युवा वक्ता</h2>
+
+                <p>राज्यस्तरीय वक्तृत्व स्पर्धा २०२७</p>
+
             </div>
-        </div>
 
-        <button class="menu-btn" id="menuBtn" aria-label="Menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        </a>
+
+        <button class="menu-btn"
+                aria-label="मेनू उघडा"
+                aria-expanded="false"
+                aria-controls="mainSidebar">
+
+            ☰
+
         </button>
 
-    </header>
+    </div>
 
-    <!-- SIDEBAR -->
-    <nav class="sidebar" id="sidebar">
+</header>
 
-        <button class="close-btn" id="closeBtn">×</button>
 
-        <div class="sidebar-logo">
-            <img src="logo.png" alt="Logo">
-            <h2>विचारक्रांती</h2>
-            <p>युवा वक्ता २०२७</p>
-        </div>
+<!-- ======================================
+     SIDEBAR OVERLAY
+====================================== -->
 
-        <div class="menu-links">
+<div class="sidebar-overlay"></div>
 
-            <a href="index.html" class="active">⌂ मुख्यपृष्ठ</a>
-            <a href="competition.html">◈ स्पर्धेविषयी</a>
-            <a href="prizes.html">🏆 पारितोषिके</a>
-            <a href="rules.html">📋 नियमावली</a>
-            <a href="winners.html">🥇 मागील विजेते</a>
-            <a href="registration.html">📝 ऑनलाइन नोंदणी</a>
-            <a href="contact.html">☎ संपर्क</a>
 
-        </div>
+<!-- ======================================
+     SIDEBAR MENU
+====================================== -->
+
+<aside class="sidebar" id="mainSidebar" aria-hidden="true">
+
+    <div class="sidebar-header">
+
+        <button class="sidebar-close"
+                aria-label="मेनू बंद करा">
+
+            ×
+
+        </button>
+
+        <img src="logo.jpg" alt="विचारक्रांती लोगो">
+
+        <h3>विचारक्रांती</h3>
+
+        <p>युवा वक्ता २०२७</p>
+
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+        <a href="index.html" class="active">
+            <span class="nav-icon">⌂</span>
+            मुख्यपृष्ठ
+        </a>
+
+        <a href="competition.html">
+            <span class="nav-icon">🎤</span>
+            स्पर्धेविषयी
+        </a>
+
+        <a href="rules.html">
+            <span class="nav-icon">📋</span>
+            नियमावली
+        </a>
+
+        <a href="prizes.html">
+            <span class="nav-icon">🏆</span>
+            पारितोषिके
+        </a>
+
+        <a href="winners.html">
+            <span class="nav-icon">🥇</span>
+            मागील विजेते
+        </a>
+
+        <a href="registration.html">
+            <span class="nav-icon">📝</span>
+            नोंदणी
+        </a>
+
+        <a href="contact.html">
+            <span class="nav-icon">📞</span>
+            संपर्क
+        </a>
+
+        <a href="about.html">
+            <span class="nav-icon">ℹ️</span>
+            आमच्याविषयी
+        </a>
 
     </nav>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
+</aside>
+
+
+<!-- ======================================
+     HERO SECTION
+====================================== -->
+
+<section class="hero">
+
+    <div class="container hero-inner">
 
         <div class="hero-content reveal">
 
-            <span class="hero-badge">
-                ✨ दहावे वर्ष • २०२७
+            <span class="tag">
+                ✦ राज्यस्तरीय वक्तृत्व स्पर्धा ✦
             </span>
 
             <h1>
-                विचारांची क्रांती,<br>
-                <span>वक्तृत्वाची शक्ती!</span>
+
+                विचारांना द्या
+
+                <span>नवीन दिशा!</span>
+
+                विचारक्रांती युवा वक्ता
+
+                <span>२०२७</span>
+
             </h1>
 
+            <div class="gold-line"></div>
+
             <p>
-                महाराष्ट्रातील युवा वक्त्यांसाठी एक भव्य व्यासपीठ.
-                आपल्या विचारांना द्या आवाज आणि शब्दांना द्या नवी दिशा.
+
+                तुमच्या विचारांना, आवाजाला आणि वक्तृत्वकलेला
+                एक भव्य व्यासपीठ मिळवून द्या.
+
+                आपल्या शब्दांतून समाजात विचारांची क्रांती घडवा!
+
             </p>
+
 
             <div class="hero-buttons">
 
-                <a href="registration.html" class="btn btn-primary">
+                <a href="registration.html"
+                   class="btn btn-primary">
+
                     नोंदणी करा →
+
                 </a>
 
-                <a href="competition.html" class="btn btn-outline">
-                    स्पर्धेविषयी जाणून घ्या
+
+                <a href="competition.html"
+                   class="btn btn-outline">
+
+                    अधिक माहिती
+
                 </a>
 
             </div>
 
         </div>
 
-        <div class="hero-visual reveal">
 
-            <div class="hero-circle">
-                <div class="hero-inner-circle">
-                    <span>🎤</span>
-                </div>
-            </div>
+        <div class="hero-image reveal">
 
-            <div class="floating-card floating-one">
-                💡 विचार
-            </div>
-
-            <div class="floating-card floating-two">
-                🔥 क्रांती
-            </div>
-
-            <div class="floating-card floating-three">
-                🗣️ वक्तृत्व
-            </div>
+            <img src="logo.jpg"
+                 alt="विचारक्रांती युवा वक्ता">
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- EVENT INFO -->
-    <section class="home-info">
+</section>
+
+
+<!-- ======================================
+     OFFICIAL BANNER
+====================================== -->
+
+<section class="banner-section section">
+
+    <div class="container">
 
         <div class="section-heading reveal">
-            <span class="section-tag">आमची ओळख</span>
-            <h2>विचारक्रांती युवा वक्ता २०२७</h2>
-            <p>शब्दांना सामर्थ्य आणि विचारांना व्यासपीठ!</p>
+
+            <span class="subtitle">
+                OFFICIAL EVENT BANNER
+            </span>
+
+            <h2>स्पर्धेचे अधिकृत बॅनर</h2>
+
+            <div class="gold-line"></div>
+
+            <p>
+                विचारक्रांती युवा वक्ता २०२७
+                स्पर्धेची अधिकृत माहिती.
+            </p>
+
         </div>
 
-        <div class="info-grid">
+
+        <div class="main-banner reveal">
+
+            <img src="banner.jpg"
+                 alt="विचारक्रांती युवा वक्ता २०२७ अधिकृत बॅनर">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================
+     ABOUT COMPETITION
+====================================== -->
+
+<section class="section section-light">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="subtitle">
+                ABOUT COMPETITION
+            </span>
+
+            <h2>स्पर्धेविषयी</h2>
+
+            <div class="gold-line"></div>
+
+            <p>
+                विचार, अभिव्यक्ती आणि वक्तृत्वाचा अनोखा उत्सव!
+            </p>
+
+        </div>
+
+
+        <div class="about-content reveal">
+
+            <p>
+
+                विचारक्रांती सार्वजनिक वाचनालय व अभ्यासिका,
+                जाखोरी यांच्या वतीने विचारक्रांती युवा वक्ता
+                २०२७ या राज्यस्तरीय वक्तृत्व स्पर्धेचे आयोजन
+                करण्यात येत आहे.
+
+            </p>
+
+            <p>
+
+                नवोदित वक्त्यांना आपले विचार प्रभावीपणे
+                मांडण्याची संधी मिळावी, त्यांच्यातील वक्तृत्वकलेला
+                प्रोत्साहन मिळावे आणि सामाजिक, शैक्षणिक व
+                वैचारिक विषयांवर चर्चा घडावी, हा या उपक्रमाचा उद्देश आहे.
+
+            </p>
+
+            <p>
+
+                महाराष्ट्रातील विविध भागांतील स्पर्धकांना
+                आपल्या वक्तृत्वाच्या जोरावर स्वतःची ओळख
+                निर्माण करण्यासाठी हे व्यासपीठ उपलब्ध आहे.
+
+            </p>
+
+
+            <div class="center-button">
+
+                <a href="competition.html"
+                   class="btn btn-primary">
+
+                    स्पर्धेविषयी अधिक वाचा →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================
+     FEATURES
+====================================== -->
+
+<section class="section section-cream">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="subtitle">
+                EVENT HIGHLIGHTS
+            </span>
+
+            <h2>स्पर्धेची वैशिष्ट्ये</h2>
+
+            <div class="gold-line"></div>
+
+        </div>
+
+
+        <div class="cards-grid">
 
             <div class="card reveal">
+
                 <div class="card-icon">🎤</div>
-                <h3>राज्यस्तरीय स्पर्धा</h3>
-                <p>महाराष्ट्रातील युवा वक्त्यांसाठी एक प्रेरणादायी व्यासपीठ.</p>
+
+                <h3>राज्यस्तरीय व्यासपीठ</h3>
+
+                <p>
+                    महाराष्ट्रातील वक्त्यांना आपले विचार
+                    मांडण्याची संधी.
+                </p>
+
             </div>
 
+
             <div class="card reveal">
+
                 <div class="card-icon">🏆</div>
+
                 <h3>आकर्षक पारितोषिके</h3>
-                <p>विजेत्यांसाठी विविध आकर्षक पारितोषिकांची संधी.</p>
+
+                <p>
+                    विजेत्यांसाठी रोख पारितोषिक,
+                    सन्मानचिन्ह आणि प्रमाणपत्र.
+                </p>
+
             </div>
+
 
             <div class="card reveal">
-                <div class="card-icon">✨</div>
-                <h3>दहावे वर्ष</h3>
-                <p>विचारक्रांतीच्या प्रेरणादायी प्रवासाचे दहावे वर्ष.</p>
+
+                <div class="card-icon">📜</div>
+
+                <h3>वक्तृत्वकलेला प्रोत्साहन</h3>
+
+                <p>
+                    नवोदित वक्त्यांना आपली कला
+                    सादर करण्याची संधी.
+                </p>
+
             </div>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- EVENT HIGHLIGHT -->
-    <section class="event-highlight">
+</section>
 
-        <div class="highlight-content reveal">
 
-            <span class="section-tag">Save The Date</span>
+<!-- ======================================
+     PRIZES PREVIEW
+====================================== -->
 
-            <h2>३ जानेवारी २०२७</h2>
+<section class="section section-light">
 
-            <p>
-                विचारक्रांती राज्यस्तरीय युवा वक्ता २०२७
-            </p>
-
-            <div class="event-location">
-                📍 जाखोरी, ता. जि. नाशिक
-            </div>
-
-            <a href="registration.html" class="btn btn-primary">
-                ऑनलाइन नोंदणी →
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- QUICK LINKS -->
-    <section class="quick-links">
+    <div class="container">
 
         <div class="section-heading reveal">
-            <span class="section-tag">Explore</span>
-            <h2>स्पर्धेची संपूर्ण माहिती</h2>
-            <p>एका क्लिकवर सर्व आवश्यक माहिती.</p>
-        </div>
 
-        <div class="quick-grid">
+            <span class="subtitle">
+                AWARDS & REWARDS
+            </span>
 
-            <a href="competition.html" class="quick-card reveal">
-                <span>📖</span>
-                <h3>स्पर्धेविषयी</h3>
-                <p>स्पर्धेची माहिती व उद्देश</p>
-                <b>पुढे वाचा →</b>
-            </a>
+            <h2>पारितोषिकांची झलक</h2>
 
-            <a href="prizes.html" class="quick-card reveal">
-                <span>🏆</span>
-                <h3>पारितोषिके</h3>
-                <p>विजेत्यांसाठी आकर्षक बक्षिसे</p>
-                <b>पुढे वाचा →</b>
-            </a>
-
-            <a href="rules.html" class="quick-card reveal">
-                <span>📋</span>
-                <h3>नियमावली</h3>
-                <p>स्पर्धेचे नियम व अटी</p>
-                <b>पुढे वाचा →</b>
-            </a>
-
-            <a href="winners.html" class="quick-card reveal">
-                <span>🥇</span>
-                <h3>मागील विजेते</h3>
-                <p>मागील वर्षांतील विजेत्यांची माहिती</p>
-                <b>पुढे वाचा →</b>
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-section">
-
-        <div class="cta-box reveal">
-
-            <h2>तुमच्या विचारांना मिळू द्या व्यासपीठ!</h2>
+            <div class="gold-line"></div>
 
             <p>
-                वक्तृत्वाच्या माध्यमातून स्वतःची ओळख निर्माण करण्याची संधी.
+                गुणवंत वक्त्यांसाठी आकर्षक रोख पारितोषिके.
             </p>
 
-            <a href="registration.html" class="btn btn-white">
-                सहभागी व्हा →
+        </div>
+
+
+        <div class="cards-grid">
+
+            <div class="card prize-card reveal">
+
+                <div class="medal">🥇</div>
+
+                <h3>प्रथम क्रमांक</h3>
+
+                <div class="amount">₹10,010</div>
+
+                <p>
+                    सन्मानचिन्ह + प्रमाणपत्र
+                </p>
+
+            </div>
+
+
+            <div class="card prize-card reveal">
+
+                <div class="medal">🥈</div>
+
+                <h3>द्वितीय क्रमांक</h3>
+
+                <div class="amount">₹7,010</div>
+
+                <p>
+                    सन्मानचिन्ह + प्रमाणपत्र
+                </p>
+
+            </div>
+
+
+            <div class="card prize-card reveal">
+
+                <div class="medal">🥉</div>
+
+                <h3>तृतीय क्रमांक</h3>
+
+                <div class="amount">₹5,010</div>
+
+                <p>
+                    सन्मानचिन्ह + प्रमाणपत्र
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="center-button">
+
+            <a href="prizes.html"
+               class="btn btn-primary">
+
+                सर्व पारितोषिके पहा →
+
             </a>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+</section>
 
-        <div class="footer-content">
 
-            <img src="logo.png" alt="विचारक्रांती Logo">
+<!-- ======================================
+     PREVIOUS WINNERS
+====================================== -->
 
-            <h2>विचारक्रांती</h2>
+<section class="section section-cream">
 
-            <p>राज्यस्तरीय युवा वक्ता २०२७</p>
+    <div class="container">
 
-            <p class="footer-location">
-                📍 जाखोरी, ता. जि. नाशिक
+        <div class="section-heading reveal">
+
+            <span class="subtitle">
+                OUR PROUD WINNERS
+            </span>
+
+            <h2>मागील ९ वर्षांचे विजेते</h2>
+
+            <div class="gold-line"></div>
+
+            <p>
+                विचारक्रांतीच्या मागील नऊ वर्षांच्या विजेत्यांचा गौरव.
             </p>
+
+        </div>
+
+
+        <div class="winners-grid">
+
+            <div class="winner-card reveal">
+
+                <div class="winner-image">
+
+                    <img src="2026.jpg"
+                         alt="२०२६ चे विजेते">
+
+                </div>
+
+                <div class="winner-info">
+
+                    <span class="winner-year">२०२६</span>
+
+                    <h3>२०२६ चे विजेते</h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="winner-card reveal">
+
+                <div class="winner-image">
+
+                    <img src="2025.jpg"
+                         alt="२०२५ चे विजेते">
+
+                </div>
+
+                <div class="winner-info">
+
+                    <span class="winner-year">२०२५</span>
+
+                    <h3>२०२५ चे विजेते</h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="winner-card reveal">
+
+                <div class="winner-image">
+
+                    <img src="2024.jpg"
+                         alt="२०२४ चे विजेते">
+
+                </div>
+
+                <div class="winner-info">
+
+                    <span class="winner-year">२०२४</span>
+
+                    <h3>२०२४ चे विजेते</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="center-button">
+
+            <a href="winners.html"
+               class="btn btn-primary">
+
+                सर्व ९ वर्षांचे विजेते पहा →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================
+     REGISTRATION
+====================================== -->
+
+<section class="section section-light">
+
+    <div class="container">
+
+        <div class="registration-box reveal">
+
+            <span class="registration-icon">🎤</span>
+
+            <h2>
+                तुमचा आवाज बनवा तुमची ओळख!
+            </h2>
+
+            <p>
+
+                विचारक्रांती युवा वक्ता २०२७ या राज्यस्तरीय
+                वक्तृत्व स्पर्धेत सहभागी होण्यासाठी
+                आजच नोंदणी करा.
+
+            </p>
+
+
+            <a href="https://forms.gle/ybr4o64BgDx9uYzj6"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-gold">
+
+                📝 नोंदणीसाठी येथे क्लिक करा
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================
+     EVENT LOCATION
+====================================== -->
+
+<section class="section section-cream">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="subtitle">
+                EVENT LOCATION
+            </span>
+
+            <h2>कार्यक्रमाचे ठिकाण</h2>
+
+            <div class="gold-line"></div>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card reveal">
+
+                <div class="card-icon">📍</div>
+
+                <h3>कार्यक्रमाचे ठिकाण</h3>
+
+                <p>
+                    मारुती मंदिर, जाखोरी,
+                    ता. जि. नाशिक, महाराष्ट्र.
+                </p>
+
+            </div>
+
+
+            <div class="contact-card reveal">
+
+                <div class="card-icon">🏛️</div>
+
+                <h3>आयोजक संस्था</h3>
+
+                <p>
+                    विचारक्रांती सार्वजनिक वाचनालय
+                    व अभ्यासिका, जाखोरी.
+                </p>
+
+                <p>
+                    <strong>टीम विचारक्रांती, जाखोरी</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================
+     FOOTER
+====================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+
+        <!-- ABOUT WEBSITE -->
+
+        <div class="footer-about">
+
+            <img src="logo.jpg"
+                 alt="विचारक्रांती लोगो">
+
+            <h3>विचारक्रांती युवा वक्ता २०२७</h3>
+
+            <p>
+
+                विचारक्रांती सार्वजनिक वाचनालय व अभ्यासिका,
+                जाखोरी यांच्या वतीने आयोजित राज्यस्तरीय
+                वक्तृत्व स्पर्धा.
+
+            </p>
+
+            <p>
+
+                नवोदित वक्त्यांना व्यासपीठ उपलब्ध करून देणे
+                आणि विचारांची देवाणघेवाण घडवणे हा आमचा प्रयत्न.
+
+            </p>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3>महत्त्वाचे दुवे</h3>
 
             <div class="footer-links">
-                <a href="index.html">मुख्यपृष्ठ</a>
-                <a href="competition.html">स्पर्धेविषयी</a>
-                <a href="prizes.html">पारितोषिके</a>
-                <a href="contact.html">संपर्क</a>
-            </div>
 
-            <div class="footer-bottom">
-                © २०२७ विचारक्रांती | टीम विचारक्रांती, जाखोरी
+                <a href="index.html">मुख्यपृष्ठ</a>
+
+                <a href="competition.html">स्पर्धेविषयी</a>
+
+                <a href="rules.html">नियमावली</a>
+
+                <a href="prizes.html">पारितोषिके</a>
+
+                <a href="winners.html">मागील विजेते</a>
+
+                <a href="registration.html">नोंदणी</a>
+
+                <a href="contact.html">संपर्क</a>
+
+                <a href="about.html">आमच्याविषयी</a>
+
             </div>
 
         </div>
 
-    </footer>
 
-    <!-- BACK TO TOP -->
-    <button class="back-to-top" id="backToTop">↑</button>
+        <!-- ORGANIZATION AND SOCIAL -->
+
+        <div class="footer-column">
+
+            <h3>आयोजक</h3>
+
+            <p>
+                विचारक्रांती सार्वजनिक वाचनालय
+                व अभ्यासिका, जाखोरी.
+            </p>
+
+            <p>
+                टीम विचारक्रांती, जाखोरी
+            </p>
+
+
+            <h3 class="social-heading">
+                सोशल मीडिया
+            </h3>
+
+
+            <div class="social-links">
+
+                <a href="https://www.facebook.com/JakhoriPublicLibrary"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+
+                    f
+
+                </a>
+
+
+                <a href="https://www.instagram.com/team_vicharkranti/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+
+                    ◎
+
+                </a>
+
+
+                <a href="https://www.youtube.com/@Vicharkranti2017"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="YouTube">
+
+                    ▶
+
+                </a>
+
+            </div>
+
+
+            <p class="footer-phone">
+                WhatsApp: +91 7507262040
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © <span class="current-year">2026</span>
+            विचारक्रांती युवा वक्ता.
+            सर्व हक्क राखीव.
+
+        </p>
+
+        <p>
+            Designed for विचारक्रांती, जाखोरी.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ======================================
+     BACK TO TOP BUTTON
+====================================== -->
+
+<button class="back-to-top"
+        aria-label="पृष्ठाच्या सुरुवातीला जा">
+
+    ↑
+
+</button>
+
+
+<!-- ======================================
+     JAVASCRIPT
+====================================== -->
+
+<script src="script.js"></script>
 
 </body>
 </html>

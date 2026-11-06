@@ -1,272 +1,438 @@
-
 <!DOCTYPE html>
 <html lang="mr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>नियमावली | विचारक्रांती युवा वक्ता २०२७</title>
 
-    <meta name="description" content="विचारक्रांती युवा वक्ता २०२७ स्पर्धेचे नियम व अटी">
+    <meta name="description" content="विचारक्रांती युवा वक्ता २०२७ राज्यस्तरीय वक्तृत्व स्पर्धेची अधिकृत नियमावली.">
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
 
-    <!-- LOADER -->
-    <div class="loader" id="loader">
-        <div class="loader-circle"></div>
-        <p>विचारक्रांती</p>
-    </div>
+<!-- HEADER -->
+<header class="header">
+    <div class="container header-inner">
 
-    <!-- OVERLAY -->
-    <div class="overlay" id="overlay"></div>
+        <a href="index.html" class="logo-area">
+            <img src="logo.jpg" alt="विचारक्रांती लोगो">
 
-    <!-- HEADER -->
-    <header class="header" id="header">
-
-        <div class="logo-area">
-            <img src="logo.png" alt="Logo">
-            <div>
-                <h2>विचारक्रांती</h2>
-                <p>राज्यस्तरीय युवा वक्ता २०२७</p>
+            <div class="logo-text">
+                <h2>विचारक्रांती युवा वक्ता</h2>
+                <p>राज्यस्तरीय वक्तृत्व स्पर्धा २०२७</p>
             </div>
-        </div>
+        </a>
 
-        <button class="menu-btn" id="menuBtn">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="menu-btn" id="menuBtn" aria-label="मेन्यू उघडा">
+            <i data-lucide="menu"></i>
         </button>
 
-    </header>
+    </div>
+</header>
 
-    <!-- SIDEBAR -->
-    <nav class="sidebar" id="sidebar">
 
-        <button class="close-btn" id="closeBtn">×</button>
+<!-- SIDEBAR -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-        <div class="sidebar-logo">
-            <img src="logo.png" alt="Logo">
-            <h2>विचारक्रांती</h2>
-            <p>युवा वक्ता २०२७</p>
-        </div>
+<aside class="sidebar" id="sidebar">
 
-        <div class="menu-links">
-            <a href="index.html">⌂ मुख्यपृष्ठ</a>
-            <a href="competition.html">◈ स्पर्धेविषयी</a>
-            <a href="prizes.html">🏆 पारितोषिके</a>
-            <a href="rules.html" class="active">📋 नियमावली</a>
-            <a href="winners.html">🥇 मागील विजेते</a>
-            <a href="registration.html">📝 ऑनलाइन नोंदणी</a>
-            <a href="contact.html">☎ संपर्क</a>
-        </div>
+    <div class="sidebar-header">
+        <img src="logo.jpg" alt="विचारक्रांती लोगो">
+
+        <h3>विचारक्रांती युवा वक्ता</h3>
+        <p>राज्यस्तरीय वक्तृत्व स्पर्धा २०२७</p>
+
+        <button class="sidebar-close" id="closeSidebar" aria-label="मेन्यू बंद करा">
+            <i data-lucide="x"></i>
+        </button>
+    </div>
+
+    <nav class="sidebar-nav">
+
+        <a href="index.html">
+            <i data-lucide="house"></i>
+            <span>मुख्यपृष्ठ</span>
+        </a>
+
+        <a href="competition.html">
+            <i data-lucide="mic-vocal"></i>
+            <span>स्पर्धेविषयी</span>
+        </a>
+
+        <a href="rules.html" class="active">
+            <i data-lucide="scroll-text"></i>
+            <span>नियम व अटी</span>
+        </a>
+
+        <a href="prizes.html">
+            <i data-lucide="trophy"></i>
+            <span>पारितोषिके</span>
+        </a>
+
+        <a href="winners.html">
+            <i data-lucide="medal"></i>
+            <span>मागील विजेते</span>
+        </a>
+
+        <a href="registration.html">
+            <i data-lucide="clipboard-pen-line"></i>
+            <span>नोंदणी</span>
+        </a>
+
+        <a href="about.html">
+            <i data-lucide="users"></i>
+            <span>आमच्याविषयी</span>
+        </a>
+
+        <a href="contact.html">
+            <i data-lucide="phone"></i>
+            <span>संपर्क</span>
+        </a>
 
     </nav>
 
-    <!-- PAGE HERO -->
-    <section class="page-hero">
+</aside>
 
-        <div class="page-hero-content reveal">
 
-            <span class="hero-badge">Rules & Regulations</span>
+<main>
 
-            <h1>
-                स्पर्धेचे नियम<br>
-                <span>आणि अटी</span>
-            </h1>
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="container">
 
-            <p>
-                स्पर्धेत सहभागी होण्यापूर्वी नियमावली काळजीपूर्वक वाचा.
-            </p>
+            <span class="subtitle">सहभागींसाठी महत्त्वाची माहिती</span>
+
+            <h1>नियमावली</h1>
+
+            <p>विचारक्रांती युवा वक्ता – २०२७</p>
+
+            <div class="gold-line"></div>
+
+        </div>
+    </section>
+
+
+    <!-- BREADCRUMB -->
+    <div class="container breadcrumb">
+        <a href="index.html">मुख्यपृष्ठ</a>
+        <span> / </span>
+        <span>नियमावली</span>
+    </div>
+
+
+    <!-- RULES SECTION -->
+    <section class="section section-light">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="subtitle">अधिकृत नियम व अटी</span>
+
+                <h2>स्पर्धेची नियमावली</h2>
+
+                <div class="gold-line"></div>
+
+                <p>
+                    स्पर्धेत सहभागी होणाऱ्या प्रत्येक स्पर्धकाने
+                    खालील नियमांचे पालन करणे आवश्यक आहे.
+                </p>
+
+            </div>
+
+
+            <div class="rules-list">
+
+                <!-- RULE 1 -->
+                <div class="card rule-card">
+
+                    <div class="rule-number">१</div>
+
+                    <div class="rule-content">
+
+                        <h3>सादरीकरणाची वेळ</h3>
+
+                        <p>
+                            प्रत्येक स्पर्धकाची सादरीकरणाची वेळ
+                            <strong>६ (५ + १) मिनिटे</strong> असेल.
+                        </p>
+
+                    </div>
+
+                    <div class="rule-icon">
+                        <i data-lucide="clock"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 2 -->
+                <div class="card rule-card">
+
+                    <div class="rule-number">२</div>
+
+                    <div class="rule-content">
+
+                        <h3>वयोमर्यादा</h3>
+
+                        <p>
+                            स्पर्धकाचे वय
+                            <strong>२५ वर्षांपेक्षा जास्त नसावे.</strong>
+                        </p>
+
+                    </div>
+
+                    <div class="rule-icon">
+                        <i data-lucide="user-round"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 3 -->
+                <div class="card rule-card">
+
+                    <div class="rule-number">३</div>
+
+                    <div class="rule-content">
+
+                        <h3>प्रवेश शुल्क</h3>
+
+                        <p>
+                            स्पर्धेसाठी प्रवेश शुल्क प्रत्येक
+                            स्पर्धकाचे <strong>₹१५०</strong> इतके असेल.
+                        </p>
+
+                    </div>
+
+                    <div class="rule-icon">
+                        <i data-lucide="indian-rupee"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 4 -->
+                <div class="card rule-card">
+
+                    <div class="rule-number">४</div>
+
+                    <div class="rule-content">
+
+                        <h3>ओळखपत्र अनिवार्य</h3>
+
+                        <p>
+                            स्पर्धकाने महाविद्यालयाचे किंवा
+                            कोणतेही एक शासनमान्य ओळखपत्र
+                            आणणे बंधनकारक आहे.
+                        </p>
+
+                    </div>
+
+                    <div class="rule-icon">
+                        <i data-lucide="id-card"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 5 -->
+                <div class="card rule-card">
+
+                    <div class="rule-number">५</div>
+
+                    <div class="rule-content">
+
+                        <h3>सांघिक पारितोषिक</h3>
+
+                        <p>
+                            सांघिक पारितोषिक नाव नोंदणीसाठी
+                            कोणतेही दोन स्पर्धक हे एका
+                            महाविद्यालयाचे विद्यार्थी असावेत.
+                        </p>
+
+                    </div>
+
+                    <div class="rule-icon">
+                        <i data-lucide="users-round"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 6 -->
+                <div class="card rule-card">
+
+                    <div class="rule-number">६</div>
+
+                    <div class="rule-content">
+
+                        <h3>प्रवेश मर्यादा</h3>
+
+                        <p>
+                            अंतिम <strong>४० स्पर्धकांनाच</strong>
+                            प्रवेश दिला जाईल.
+                        </p>
+
+                    </div>
+
+                    <div class="rule-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 7 -->
+                <div class="card rule-card">
+
+                    <div class="rule-number">७</div>
+
+                    <div class="rule-content">
+
+                        <h3>परीक्षकांचा निर्णय</h3>
+
+                        <p>
+                            परीक्षकांचा निर्णय अंतिम राहील.
+                            स्पर्धेच्या नियमात बदल करण्याचा
+                            सर्वस्वी हक्क संयोजकांकडे राखीव राहील.
+                        </p>
+
+                    </div>
+
+                    <div class="rule-icon">
+                        <i data-lucide="gavel"></i>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
     </section>
 
-    <!-- RULES INTRO -->
-    <section class="content-page">
-
-        <div class="section-heading reveal">
-            <span class="section-tag">Important Information</span>
-            <h2>महत्त्वाच्या सूचना</h2>
-            <p>स्पर्धकांसाठी आवश्यक मार्गदर्शन</p>
-        </div>
-
-        <div class="detail-card reveal">
-
-            <div class="detail-icon">📢</div>
-
-            <h3>स्पर्धकांसाठी सूचना</h3>
-
-            <p>
-                विचारक्रांती राज्यस्तरीय युवा वक्ता २०२७ मध्ये
-                सहभागी होणाऱ्या सर्व स्पर्धकांनी आयोजकांकडून
-                जाहीर करण्यात आलेली नियमावली वाचून तिचे पालन करावे.
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- RULES LIST -->
-    <section class="content-page">
-
-        <div class="section-heading reveal">
-            <span class="section-tag">Competition Rules</span>
-            <h2>स्पर्धेचे नियम</h2>
-        </div>
-
-        <div class="rules-list">
-
-            <div class="rule-card reveal">
-                <div class="rule-number">01</div>
-                <div>
-                    <h3>नोंदणी</h3>
-                    <p>
-                        स्पर्धेत सहभागी होण्यासाठी अधिकृत ऑनलाइन
-                        नोंदणी फॉर्म भरणे आवश्यक आहे.
-                    </p>
-                </div>
-            </div>
-
-            <div class="rule-card reveal">
-                <div class="rule-number">02</div>
-                <div>
-                    <h3>माहितीची अचूकता</h3>
-                    <p>
-                        नोंदणी फॉर्ममध्ये दिलेली सर्व माहिती
-                        अचूक आणि खरी असावी.
-                    </p>
-                </div>
-            </div>
-
-            <div class="rule-card reveal">
-                <div class="rule-number">03</div>
-                <div>
-                    <h3>विषय</h3>
-                    <p>
-                        स्पर्धेसाठी आयोजकांनी जाहीर केलेल्या
-                        विषयांमधूनच भाषणाचा विषय निवडावा.
-                    </p>
-                </div>
-            </div>
-
-            <div class="rule-card reveal">
-                <div class="rule-number">04</div>
-                <div>
-                    <h3>वेळेचे पालन</h3>
-                    <p>
-                        भाषणासाठी दिलेल्या वेळेचे पालन
-                        करणे आवश्यक आहे.
-                    </p>
-                </div>
-            </div>
-
-            <div class="rule-card reveal">
-                <div class="rule-number">05</div>
-                <div>
-                    <h3>शिस्त आणि सभ्यता</h3>
-                    <p>
-                        स्पर्धेदरम्यान शिस्त, सभ्यता आणि
-                        इतर स्पर्धकांचा आदर राखावा.
-                    </p>
-                </div>
-            </div>
-
-            <div class="rule-card reveal">
-                <div class="rule-number">06</div>
-                <div>
-                    <h3>परीक्षकांचा निर्णय</h3>
-                    <p>
-                        स्पर्धेच्या निकालाबाबत परीक्षकांचा
-                        आणि आयोजकांचा निर्णय अंतिम राहील.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
 
     <!-- IMPORTANT NOTICE -->
-    <section class="content-page">
+    <section class="section section-cream">
 
-        <div class="section-heading reveal">
-            <span class="section-tag">Notice</span>
-            <h2>विशेष सूचना</h2>
-        </div>
+        <div class="container">
 
-        <div class="notice-card reveal">
+            <div class="registration-box">
 
-            <div class="notice-icon">⚠️</div>
+                <div class="card-icon" style="margin: 0 auto 20px;">
+                    <i data-lucide="alert-circle"></i>
+                </div>
 
-            <h3>कृपया लक्षात घ्या</h3>
+                <h2>महत्त्वाची सूचना</h2>
 
-            <p>
-                वयोमर्यादा, भाषणाचा कालावधी, प्रवेश शुल्क,
-                अंतिम नोंदणी तारीख आणि इतर सविस्तर अटी
-                आयोजकांकडून अधिकृतरीत्या जाहीर झाल्यानंतर
-                या पृष्ठावर अद्ययावत करण्यात येतील.
-            </p>
+                <p>
+                    प्रत्येक स्पर्धकाने स्पर्धेच्या वरील
+                    नियमांचे काळजीपूर्वक वाचन करून
+                    त्यानुसार सहभाग नोंदवावा.
+                </p>
 
-        </div>
+                <a href="https://forms.gle/ybr4o64BgDx9uYzj6"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-gold">
 
-    </section>
+                    ऑनलाइन नोंदणी करा
+                    <i data-lucide="external-link"></i>
 
-    <!-- CTA -->
-    <section class="cta-section">
+                </a>
 
-        <div class="cta-box reveal">
-
-            <h2>नियम वाचले? आता सहभागासाठी सज्ज व्हा!</h2>
-
-            <p>
-                विचारक्रांती युवा वक्ता २०२७ मध्ये आपला सहभाग नोंदवा.
-            </p>
-
-            <a href="registration.html" class="btn btn-white">
-                ऑनलाइन नोंदणी →
-            </a>
+            </div>
 
         </div>
 
     </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+</main>
 
-        <div class="footer-content">
 
-            <img src="logo.png" alt="Logo">
+<!-- FOOTER -->
+<footer class="footer">
 
-            <h2>विचारक्रांती</h2>
+    <div class="container">
 
-            <p>राज्यस्तरीय युवा वक्ता २०२७</p>
+        <div class="footer-grid">
 
-            <p class="footer-location">
-                📍 जाखोरी, ता. जि. नाशिक
-            </p>
+            <div class="footer-about">
+
+                <img src="logo.jpg" alt="विचारक्रांती लोगो">
+
+                <h3>विचारक्रांती युवा वक्ता २०२७</h3>
+
+                <p>
+                    राज्यस्तरीय वक्तृत्व स्पर्धा
+                    <br>
+                    जाखोरी, ता. जि. नाशिक
+                    <br>
+                    टीम विचारक्रांती, जाखोरी
+                </p>
+
+            </div>
+
 
             <div class="footer-links">
+
+                <h3>महत्त्वाच्या लिंक</h3>
+
                 <a href="index.html">मुख्यपृष्ठ</a>
                 <a href="competition.html">स्पर्धेविषयी</a>
+                <a href="rules.html">नियम व अटी</a>
                 <a href="prizes.html">पारितोषिके</a>
-                <a href="contact.html">संपर्क</a>
+
             </div>
 
-            <div class="footer-bottom">
-                © २०२७ विचारक्रांती | टीम विचारक्रांती, जाखोरी
+
+            <div class="footer-links">
+
+                <h3>इतर माहिती</h3>
+
+                <a href="winners.html">मागील विजेते</a>
+                <a href="registration.html">नोंदणी</a>
+                <a href="about.html">आमच्याविषयी</a>
+                <a href="contact.html">संपर्क</a>
+
             </div>
 
         </div>
 
-    </footer>
+    </div>
 
-    <button class="back-to-top" id="backToTop">↑</button>
+
+    <div class="footer-bottom">
+
+        <p>
+            © २०२७ विचारक्रांती युवा वक्ता. सर्व हक्क राखीव.
+        </p>
+
+        <p>टीम विचारक्रांती, जाखोरी</p>
+
+    </div>
+
+</footer>
+
+
+<!-- BACK TO TOP -->
+<button id="backToTop" class="back-to-top" aria-label="वर जा">
+    <i data-lucide="arrow-up"></i>
+</button>
+
+
+<script src="script.js"></script>
+
+<script>
+    if (window.lucide) {
+        lucide.createIcons();
+    }
+</script>
 
 </body>
 </html>
